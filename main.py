@@ -4,13 +4,16 @@ from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QWidget, \
     QFormLayout, QLineEdit, QDialog
 import sqlite3
+from UI.main_ui import Ui_MainWindow
+from UI.addEditCoffeeForm_ui import Ui_Form
+import UI.Part_ui
 
 
-class MainWindow(QMainWindow):
+class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self):
         super().__init__()
-        uic.loadUi('main.ui', self)
-        self.setWindowTitle("Expresso")
+        self.setupUi(self)
+        self.setWindowTitle("Latte")
         
         self.scrollLayout = QFormLayout()
         self.scrollWidget = QWidget()
@@ -50,10 +53,10 @@ class MainWindow(QMainWindow):
         self.refresh()
 
 
-class editCoffee(QDialog):
+class editCoffee(QDialog, Ui_Form):
     def __init__(self, id=None, name='', degree='', type='', desc='', price='', size=''):
         super().__init__()
-        uic.loadUi("addEditCoffeeForm.ui", self)
+        self.setupUi(self)
         self.setWindowTitle("Edit")
         self.id = id
         self.name = name
@@ -116,10 +119,10 @@ class editCoffee(QDialog):
         self.reject()
 
 
-class Part(QWidget):
+class Part(QWidget, UI.Part_ui.Ui_Form):
     def __init__(self, id=None, name='', degree='', type='', desc='', price='', size='', parent=''):
         super().__init__()
-        uic.loadUi('part.ui', self)
+        self.setupUi(self)
         self.id = id
         self.name = name
         self.parent = parent
