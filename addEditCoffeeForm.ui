@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>625</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(242, 243, 245)</string>
+  </property>
+  <widget class="QPushButton" name="reject_btn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>517</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:8px;
+</string>
+   </property>
+   <property name="text">
+    <string>Отменить</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="accept_btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>517</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:white;
+border-radius:8px;
+background-color:rgb(43, 112, 246);</string>
+   </property>
+   <property name="text">
+    <string>Изменить</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="degree_text">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>47</y>
+     <width>585</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Степень обжарки</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>109</y>
+     <width>585</width>
+     <height>325</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Описание</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="size_text">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>471</y>
+     <width>585</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Объем</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="type_text">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>78</y>
+     <width>585</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Тип</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="price_text">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>440</y>
+     <width>585</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Цена</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="name_text">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>585</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Имя</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>name_text</tabstop>
+  <tabstop>degree_text</tabstop>
+  <tabstop>type_text</tabstop>
+  <tabstop>textEdit</tabstop>
+  <tabstop>price_text</tabstop>
+  <tabstop>size_text</tabstop>
+  <tabstop>accept_btn</tabstop>
+  <tabstop>reject_btn</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

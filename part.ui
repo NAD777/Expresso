@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>604</width>
+    <width>648</width>
     <height>476</height>
    </rect>
   </property>
@@ -18,16 +18,13 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>587</width>
+     <width>621</width>
      <height>451</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="4" column="0">
      <widget class="QLineEdit" name="size_text"/>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLineEdit" name="type_text"/>
     </item>
     <item row="0" column="0">
      <widget class="QLineEdit" name="degree_text"/>
@@ -38,9 +35,43 @@
     <item row="2" column="0">
      <widget class="QTextEdit" name="textEdit"/>
     </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="type_text"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QPushButton" name="edit_btn">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>edit(1).png</normaloff>edit(1).png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="delete_btn">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>delete.png</normaloff>delete.png</iconset>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>degree_text</tabstop>
+  <tabstop>type_text</tabstop>
+  <tabstop>textEdit</tabstop>
+  <tabstop>price_text</tabstop>
+  <tabstop>size_text</tabstop>
+  <tabstop>edit_btn</tabstop>
+  <tabstop>delete_btn</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
